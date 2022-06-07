@@ -22,7 +22,7 @@ export function App() {
 
    return (<>
       <Header/>
-      <div className='flex flex-col space-y-4  py-4 justify-items-center text-orange-300 content-center justify-center items-center  bg-sky-800 w-full  h-full'>
+      <div className='flex flex-col space-y-4 scroll-smooth overscroll-y-contain py-4 justify-items-center text-orange-300 content-center justify-center items-center  bg-sky-800 w-full  h-full'>
          {data?.data.map((v) => (<div className='rounded-md border-black container bg-gray-800 border-2 h-min  p-4 text-orange-300'>
             <p>{v.commit.message}</p>
             <p>Date: {v?.commit?.committer?.date}</p>
